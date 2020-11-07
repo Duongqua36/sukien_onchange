@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function openPage(st){
+            if(confirm('bạn đã đủ 18 chưa'))
+            window.open(st);
+        }
+        function display(){
+            let tmp;
+            tmp = prompt('nhập')
+            document.getElementById('result').innerText = tmp;
+        }
+    </script>
+</head>
+<body onload="alert('trang nguy hiểm cho người dưới 18!')">
+<div id="result" style="width: 200px" border="1px black solid">
+
+</div>
+<a href="http://Vnexpress.net" target="_blank" onclick="return(confirm('đủ 18 chưa'))"> mở trang Vnexpress.net</a>
+<button onclick="openPage(prompt('Địa chỉ bạn êi'))">Mở trang web</button>
+
+
+</body>
+</html>
